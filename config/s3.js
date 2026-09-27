@@ -6,6 +6,7 @@ const { S3Client, PutObjectCommand, GetObjectCommand } = require('@aws-sdk/clien
 const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 require('dotenv').config();
 
 const region = process.env.AWS_REGION || 'ap-south-1';
@@ -33,7 +34,9 @@ if (isAwsS3Configured && process.env.USE_LOCAL_FALLBACK !== 'true') {
 }
 
 // Local storage directory fallback
-const LOCAL_UPLOADS_DIR = path.join(__dirname, '..', 'uploads');
+const LOCAL_UPLOADS_DIR = process.env.VERCEL
+  ? path.join(os.tmpdir(), 'skillbridge-uploads')
+  : path.join(__dirname, '..', 'uploads');
 if (!fs.existsSync(LOCAL_UPLOADS_DIR)) {
   fs.mkdirSync(LOCAL_UPLOADS_DIR, { recursive: true });
 }
