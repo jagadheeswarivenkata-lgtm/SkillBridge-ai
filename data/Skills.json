@@ -1,0 +1,62 @@
+[
+  {
+    "skillId": "python",
+    "name": "Python",
+    "category": "Programming"
+  },
+  {
+    "skillId": "javascript",
+    "name": "JavaScript",
+    "category": "Web"
+  },
+  {
+    "skillId": "sql",
+    "name": "SQL",
+    "category": "Database"
+  },
+  {
+    "skillId": "react",
+    "name": "React",
+    "category": "Web"
+  },
+  {
+    "skillId": "nodejs",
+    "name": "Node.js",
+    "category": "Web"
+  },
+  {
+    "skillId": "aws",
+    "name": "AWS",
+    "category": "Cloud"
+  },
+  {
+    "skillId": "docker",
+    "name": "Docker",
+    "category": "Cloud"
+  },
+  {
+    "skillId": "machine-learning",
+    "name": "Machine Learning",
+    "category": "AI/ML"
+  },
+  {
+    "skillId": "deep-learning",
+    "name": "Deep Learning",
+    "category": "AI/ML"
+  },
+  {
+    "skillId": "pytorch",
+    "name": "PyTorch",
+    "category": "AI/ML"
+  },
+  {
+    "skillId": "llm",
+    "name": "LLM & Prompt Engineering",
+    "category": "AI/ML"
+  },
+  {
+    "skillId": "rag",
+    "name": "RAG Architecture",
+    "category": "AI/ML"
+  }
+]

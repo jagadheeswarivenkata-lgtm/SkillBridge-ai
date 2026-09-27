@@ -1,0 +1,93 @@
+[
+  {
+    "studentId": "student-demo",
+    "notificationId": "b3acc9a9-7897-4be4-883c-846089435352",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:32:37.994Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "7feb0123-e374-43aa-9cdf-2a0debfe212b",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:32:37.994Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "bcec7260-38c7-4d87-ac2f-49d66bb648cc",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:34:15.509Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "1e155fea-d241-4a87-9a88-0f1b03df669c",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:34:15.509Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "42a16e21-156f-461e-ba5f-250e7d9bbad7",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:36:54.624Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "882466f1-1ab0-4704-8589-492e8c28a318",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:36:54.624Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "2f2021c1-4e8a-416e-abc7-3a68e54ed6e7",
+    "type": "skill-dashboard",
+    "message": "Welcome to SkillBridge AI! Your profile is ready for skill analysis.",
+    "isRead": false,
+    "createdAt": "2026-09-26T06:41:24.986Z",
+    "metadata": {
+      "page": "dashboard"
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "e3ee8331-1312-47df-9361-b66e6f9b2c58",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-26T09:01:37.588Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "54c55e80-3ae2-4433-8481-16b41014b2fa",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-26T09:01:37.588Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "ff2aae92-29c2-4e61-87bf-20135ec2bd9f",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-26T09:04:28.417Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "43385105-9d02-4f5b-86fc-cec0825e2150",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-26T09:04:28.417Z"
+  }
+]

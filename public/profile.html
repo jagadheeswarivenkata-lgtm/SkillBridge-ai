@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge AI | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body data-page="profile">
+  <div class="container app-shell">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div class="brand" style="padding: 4px 10px 20px;">
+          <div class="brand-mark"><i class="fa-solid fa-bridge"></i></div>
+          <span>SKILLBRIDGE</span>
+        </div>
+        <div class="nav-section">
+          <a class="nav-item" href="/dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+          <div class="nav-item active"><i class="fa-solid fa-user"></i> Profile</div>
+          <a class="nav-item" href="/target-role.html"><i class="fa-solid fa-bullseye"></i> Target Role</a>
+          <a class="nav-item" href="/evidence.html"><i class="fa-solid fa-folder-open"></i> Evidence</a>
+          <a class="nav-item" href="/skill-gap.html"><i class="fa-solid fa-chart-column"></i> Skill Gap</a>
+        </div>
+      </aside>
+      <main class="content-area">
+        <div class="topbar">
+          <div class="topbar-search"><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search..." /></div></div>
+          <div class="user-menu"><div class="avatar">S</div><button class="btn btn-outline" id="logoutButton">Logout</button></div>
+        </div>
+
+        <div class="panel" style="margin-top:20px; padding:24px;">
+          <div class="row"><h3>Student Profile</h3><span class="badge">Profile Completion <span id="profileCompletion">85%</span></span></div>
+          <div class="progress-strip" style="margin:18px 0 20px;"><div class="progress-bar" id="profileCompletionFill" style="width:85%"></div></div>
+          <form id="profileForm">
+            <div class="auth-grid">
+              <div class="form-group"><label>Name</label><input id="name" required /></div>
+              <div class="form-group"><label>Email</label><input id="email" type="email" required /></div>
+              <div class="form-group"><label>College</label><input id="college" required /></div>
+              <div class="form-group"><label>Branch</label><input id="branch" required /></div>
+              <div class="form-group"><label>Graduation Year</label><input id="graduationYear" type="number" required /></div>
+              <div class="form-group"><label>Target Career Role</label><input id="targetRole" required /></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Update Profile</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

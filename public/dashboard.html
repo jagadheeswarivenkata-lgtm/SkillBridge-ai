@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge AI | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-page="dashboard">
+  <div class="container app-shell">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div class="brand" style="padding: 4px 10px 20px;">
+          <div class="brand-mark"><i class="fa-solid fa-bridge"></i></div>
+          <span>SKILLBRIDGE</span>
+        </div>
+        <div class="nav-section">
+          <div class="nav-item active"><i class="fa-solid fa-house"></i> Dashboard</div>
+          <a class="nav-item" href="/profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+          <a class="nav-item" href="/target-role.html"><i class="fa-solid fa-bullseye"></i> Target Role</a>
+          <a class="nav-item" href="/evidence.html"><i class="fa-solid fa-folder-open"></i> Evidence</a>
+          <a class="nav-item" href="/skill-gap.html"><i class="fa-solid fa-chart-column"></i> Skill Gap</a>
+          <a class="nav-item" href="/skill-graph.html"><i class="fa-solid fa-chart-area"></i> Skill Graph</a>
+          <a class="nav-item" href="/learning-path.html"><i class="fa-solid fa-route"></i> Learning Path</a>
+          <a class="nav-item" href="/projects.html"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+          <a class="nav-item" href="/assessment.html"><i class="fa-solid fa-clipboard-check"></i> Assessment</a>
+          <a class="nav-item" href="/faculty.html"><i class="fa-solid fa-chalkboard-user"></i> Faculty</a>
+        </div>
+      </aside>
+      <main class="content-area">
+        <div class="topbar">
+          <div class="topbar-search">
+            <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search skills, assessments, roles..." /></div>
+          </div>
+          <div class="user-menu">
+            <div class="avatar" id="profileChip">S</div>
+            <button class="btn btn-outline" id="logoutButton">Logout</button>
+          </div>
+        </div>
+
+        <div id="dashboardRoot">
+          <div style="padding: 20px 0 0;">
+            <h2 id="welcomeTitle">Good morning, Student</h2>
+          </div>
+          <div id="statsGrid" class="dashboard-grid"></div>
+
+          <div class="content-panel">
+            <div class="panel">
+              <div class="row"><h3>Skill readiness</h3><span class="badge">AI</span></div>
+              <div class="ring-wrap" id="readinessRing"></div>
+              <div class="charts-grid">
+                <div class="chart-card"><canvas id="skillRadarChart"></canvas></div>
+                <div class="chart-card"><canvas id="currentVsTargetChart"></canvas></div>
+                <div class="chart-card" style="grid-column:1 / -1;"><canvas id="weeklyTrendChart"></canvas></div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="row"><h3>Skill gaps</h3><span class="badge">Priority</span></div>
+              <ul id="skillGapList" class="list"></ul>
+              <div style="margin-top:18px;">
+                <h4>Notifications</h4>
+                <ul id="notificationList" class="list"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-panel">
+            <div class="panel">
+              <div class="row"><h3>Recommended projects</h3><span class="badge">Next actions</span></div>
+              <div id="projectList" class="card-stack"></div>
+            </div>
+            <div class="panel">
+              <div class="row"><h3>Recent evidence</h3><span class="badge">Verified</span></div>
+              <div class="card-stack">
+                <div class="project-card">
+                  <div class="row"><strong>AI Study Companion</strong><span class="tag success">Verified</span></div>
+                  <p class="muted">RAG-powered learning assistant using Python and vector search.</p>
+                </div>
+                <div class="project-card">
+                  <div class="row"><strong>ML Pipeline Dashboard</strong><span class="tag warning">Needs review</span></div>
+                  <p class="muted">Model evaluation dashboard for deployment readiness and drift monitoring.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

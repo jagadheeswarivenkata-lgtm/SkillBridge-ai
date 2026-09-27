@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge AI | Skill Gap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body data-page="skill-gap">
+  <div class="container app-shell">
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div class="brand" style="padding: 4px 10px 20px;">
+          <div class="brand-mark"><i class="fa-solid fa-bridge"></i></div>
+          <span>SKILLBRIDGE</span>
+        </div>
+        <div class="nav-section">
+          <a class="nav-item" href="/dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+          <a class="nav-item" href="/profile.html"><i class="fa-solid fa-user"></i> Profile</a>
+          <a class="nav-item" href="/target-role.html"><i class="fa-solid fa-bullseye"></i> Target Role</a>
+          <a class="nav-item" href="/evidence.html"><i class="fa-solid fa-folder-open"></i> Evidence</a>
+          <div class="nav-item active"><i class="fa-solid fa-chart-column"></i> Skill Gap</div>
+        </div>
+      </aside>
+      <main class="content-area">
+        <div class="topbar"><div class="topbar-search"><div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Skill gap analysis" /></div></div><div class="user-menu"><div class="avatar">S</div><button class="btn btn-outline" id="logoutButton">Logout</button></div></div>
+        <div id="skillGapCards" style="margin-top:20px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px;"></div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge AI | Student Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body data-page="student-detail">
+  <div class="container app-shell">
+    <div class="panel" style="padding:24px;">
+      <div class="row"><h2 id="studentName">Student</h2><a href="/faculty.html" class="btn btn-outline">Back to faculty</a></div>
+      <p id="studentMeta" class="muted">Student profile</p>
+      <div class="grid-2" style="margin-top:20px;">
+        <div class="panel">
+          <h4>Evidence</h4>
+          <div id="evidenceReview" class="card-stack"></div>
+        </div>
+        <div class="panel">
+          <h4>Faculty Review</h4>
+          <form id="reviewForm">
+            <div class="form-group">
+              <label>Status</label>
+              <select id="reviewStatus">
+                <option>Verified</option>
+                <option>Needs Improvement</option>
+                <option>Rejected</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Verified Skill Level</label>
+              <input id="verifiedSkillLevel" type="number" min="0" max="5" value="3" />
+            </div>
+            <div class="form-group">
+              <label>Comments</label>
+              <textarea id="reviewComment" placeholder="Provide faculty review comments..."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Review Evidence</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

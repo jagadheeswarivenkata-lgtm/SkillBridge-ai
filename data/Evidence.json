@@ -1,0 +1,38 @@
+[
+  {
+    "studentId": "student-demo",
+    "evidenceId": "evidence-demo",
+    "title": "AI Study Companion",
+    "description": "Built a RAG-powered educational chat app using Python, FastAPI, and a vector database.",
+    "category": "Project",
+    "projectUrl": "https://github.com/example/skillbridge-ai-student",
+    "skillCategory": "AI/ML",
+    "difficultyLevel": "Intermediate",
+    "status": "Verified",
+    "aiAnalysis": {
+      "skills": [
+        {
+          "name": "Python",
+          "level": "Intermediate",
+          "confidence": 0.8
+        },
+        {
+          "name": "Machine Learning",
+          "level": "Basic",
+          "confidence": 0.67
+        },
+        {
+          "name": "RAG",
+          "level": "Basic",
+          "confidence": 0.6
+        }
+      ],
+      "recommendations": [
+        "Add evaluation metrics",
+        "Package as a deployable API",
+        "Add a feedback loop"
+      ]
+    },
+    "createdAt": "2026-09-26T09:04:28.419Z"
+  }
+]

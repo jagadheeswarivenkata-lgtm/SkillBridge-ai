@@ -1,0 +1,29 @@
+[
+  {
+    "studentId": "student-demo",
+    "assessmentId": "assessment-demo",
+    "title": "Week 1 Assessment",
+    "weekNumber": 1,
+    "skillsTested": [
+      "Python",
+      "Machine Learning"
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "question": "Which metric is usually used for classification problems?",
+        "options": [
+          "Accuracy",
+          "Bandwidth",
+          "Latency",
+          "RAM"
+        ],
+        "answer": "Accuracy"
+      }
+    ],
+    "score": 82,
+    "submittedAt": "2026-09-26T09:04:28.420Z",
+    "createdAt": "2026-09-26T09:04:28.420Z"
+  }
+]

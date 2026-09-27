@@ -1,0 +1,59 @@
+[
+  {
+    "studentId": "student-demo",
+    "pathId": "path-demo",
+    "title": "AI Engineer Learning Path",
+    "targetRole": "AI Engineer",
+    "phases": [
+      {
+        "phase": "PHASE 1",
+        "title": "Python & Data Skills",
+        "duration": "7 days",
+        "tasks": [
+          {
+            "title": "Python functions",
+            "completed": true
+          },
+          {
+            "title": "SQL fundamentals",
+            "completed": true
+          }
+        ],
+        "completed": true
+      },
+      {
+        "phase": "PHASE 2",
+        "title": "Machine Learning",
+        "duration": "10 days",
+        "tasks": [
+          {
+            "title": "Feature engineering",
+            "completed": false
+          },
+          {
+            "title": "Model evaluation",
+            "completed": false
+          }
+        ],
+        "completed": false
+      },
+      {
+        "phase": "PHASE 3",
+        "title": "Deep Learning & RAG",
+        "duration": "14 days",
+        "tasks": [
+          {
+            "title": "PyTorch basics",
+            "completed": false
+          },
+          {
+            "title": "RAG pipeline",
+            "completed": false
+          }
+        ],
+        "completed": false
+      }
+    ],
+    "createdAt": "2026-09-26T09:04:28.421Z"
+  }
+]

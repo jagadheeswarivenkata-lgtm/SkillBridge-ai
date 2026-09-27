@@ -1,0 +1,71 @@
+[
+  {
+    "roleId": "ai-engineer",
+    "title": "AI Engineer",
+    "description": "Build AI-powered systems, integrate LLM workflows, and deploy production-grade services.",
+    "requirements": [
+      {
+        "name": "Python",
+        "requiredLevel": 4,
+        "confidence": 0.9
+      },
+      {
+        "name": "Machine Learning",
+        "requiredLevel": 3,
+        "confidence": 0.9
+      },
+      {
+        "name": "Deep Learning",
+        "requiredLevel": 3,
+        "confidence": 0.82
+      },
+      {
+        "name": "PyTorch",
+        "requiredLevel": 3,
+        "confidence": 0.8
+      },
+      {
+        "name": "LLM & Prompt Engineering",
+        "requiredLevel": 3,
+        "confidence": 0.84
+      },
+      {
+        "name": "RAG Architecture",
+        "requiredLevel": 3,
+        "confidence": 0.82
+      },
+      {
+        "name": "Docker",
+        "requiredLevel": 2,
+        "confidence": 0.7
+      }
+    ]
+  },
+  {
+    "roleId": "full-stack-developer",
+    "title": "Full Stack Developer",
+    "description": "Build full-featured web apps with front-end and back-end engineering skills.",
+    "requirements": [
+      {
+        "name": "JavaScript",
+        "requiredLevel": 4
+      },
+      {
+        "name": "React",
+        "requiredLevel": 3
+      },
+      {
+        "name": "Node.js",
+        "requiredLevel": 3
+      },
+      {
+        "name": "SQL",
+        "requiredLevel": 3
+      },
+      {
+        "name": "Docker",
+        "requiredLevel": 2
+      }
+    ]
+  }
+]

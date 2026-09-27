@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkillBridge AI | Register</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body data-page="register">
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="brand"><div class="brand-mark"><i class="fa-solid fa-bridge"></i></div><span>SKILLBRIDGE AI</span></div>
+      <div class="nav-cta">
+        <button class="btn btn-outline" onclick="window.location.href='/'">Home</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="form-shell">
+      <div class="center">
+        <div class="brand-mark" style="margin:0 auto 16px; width:54px; height:54px;"><i class="fa-solid fa-user-plus"></i></div>
+        <h2>Create your account</h2>
+        <p class="muted">Start building evidence-based career readiness.</p>
+      </div>
+
+      <form id="registerForm">
+        <div class="auth-grid">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" type="password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input id="confirmPassword" type="password" required />
+          </div>
+          <div class="form-group">
+            <label for="branch">Branch</label>
+            <input id="branch" type="text" required />
+          </div>
+          <div class="form-group">
+            <label for="college">College</label>
+            <input id="college" type="text" required />
+          </div>
+          <div class="form-group" style="grid-column:1 / -1;">
+            <label for="graduationYear">Graduation Year</label>
+            <input id="graduationYear" type="number" min="2021" max="2035" required />
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" style="width:100%; margin-top:12px;">Register</button>
+      </form>
+
+      <div class="inline-links">
+        <span>Already have an account? <a href="/login.html">Login</a></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
