@@ -3,26 +3,26 @@
     "studentId": "faculty-1",
     "fullName": "Dr. Meera Nair",
     "email": "faculty@skillbridge.ai",
-    "passwordHash": "$2a$10$BbG2EkEf.ddXeoSY7rEdxed2icfihEQIixN.KttSIbMUTruihFYNy",
+    "passwordHash": "$2a$10$vVZLknYfRxBawkcrU3epqeOoNXTHGwzUUOm0TchSshBaIkJJAX4zq",
     "role": "faculty",
     "branch": "AI & Data Science",
     "college": "SkillBridge Academy",
     "graduationYear": 2017,
-    "createdAt": "2026-09-28T11:16:05.355Z"
+    "createdAt": "2026-09-28T12:21:29.576Z"
   },
   {
     "studentId": "student-demo",
     "fullName": "Aisha Sharma",
     "email": "aisha@student.skillbridge.ai",
-    "passwordHash": "$2a$10$pLEBmlO1JIGwYkK6JANi/.VSDxLwKDqDTqehpJrLbwejtcoAbucWG",
+    "passwordHash": "$2a$10$WqgCKxpl4YLF4kj2tPHUe.b/Ukh5bW9XGfpXvA3K1tJMGPGuqdL7O",
     "branch": "CSE",
     "college": "IIIT Hyderabad",
     "graduationYear": 2027,
     "targetRole": "AI Engineer",
     "role": "student",
     "profileCompletion": 88,
-    "createdAt": "2026-09-28T11:16:05.433Z",
-    "updatedAt": "2026-09-28T11:16:05.433Z"
+    "createdAt": "2026-09-28T12:21:29.853Z",
+    "updatedAt": "2026-09-28T12:21:29.853Z"
   },
   {
     "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",

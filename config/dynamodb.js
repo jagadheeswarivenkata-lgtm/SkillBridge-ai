@@ -15,6 +15,7 @@ const {
 } = require('@aws-sdk/lib-dynamodb');
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 require('dotenv').config();
 
 const region = process.env.AWS_REGION || 'ap-south-1';
@@ -52,8 +53,11 @@ if (useAws || endpoint) {
   }
 }
 
-// Local Document Store (File-backed persistence) to guarantee 100% functionality out of the box
-const DATA_DIR = path.join(__dirname, '..', 'data');
+// Local Document Store (File-backed persistence) to guarantee 100% functionality out of the box.
+// On Vercel, the project filesystem is read-only, so write to /tmp instead.
+const DATA_DIR = process.env.VERCEL
+  ? path.join(os.tmpdir(), 'skillbridge-data')
+  : path.join(__dirname, '..', 'data');
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR, { recursive: true });
 }

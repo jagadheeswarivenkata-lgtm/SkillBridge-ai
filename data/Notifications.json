@@ -355,5 +355,37 @@
     "metadata": {
       "score": 100
     }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "94a96b22-2b70-41e5-a0c4-2fd5d5244a4d",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-28T12:10:30.143Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "487aa1f9-772e-484d-8f6c-f769019ca4c9",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-28T12:10:30.143Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "3bb4a908-6515-4441-9426-2e24620c77af",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-28T12:21:29.886Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "d015f635-d5b2-4971-98ba-944d24f62128",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-28T12:21:29.886Z"
   }
 ]

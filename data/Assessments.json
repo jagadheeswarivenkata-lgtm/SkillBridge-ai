@@ -23,8 +23,8 @@
       }
     ],
     "score": 82,
-    "submittedAt": "2026-09-28T11:16:05.452Z",
-    "createdAt": "2026-09-28T11:16:05.452Z"
+    "submittedAt": "2026-09-28T12:21:29.897Z",
+    "createdAt": "2026-09-28T12:21:29.897Z"
   },
   {
     "studentId": "student-demo",
@@ -1223,5 +1223,96 @@
       "recommendedNextFocus": "Continue to Phase 2 of your roadmap, focusing on practical API security and streaming architectures."
     },
     "updatedAt": "2026-09-28T11:16:21.289Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "assessmentId": "cbac06c7-5690-4c30-8d0f-7f5c682063d8",
+    "title": "Weekly AI Engineer Assessment",
+    "weekNumber": 1,
+    "skillsTested": [
+      "Python",
+      "Machine Learning",
+      "RAG"
+    ],
+    "questions": [
+      {
+        "id": "q1",
+        "type": "mcq",
+        "skill": "Python",
+        "points": 20,
+        "question": "In Python, which built-in construct is most memory-efficient for streaming and processing a 10 GB log file line by line without exhausting RAM?",
+        "options": [
+          "A generator expression / yield statement iterating over file object",
+          "readlines() storing all lines into an in-memory list",
+          "List comprehension with eager evaluation",
+          "Loading the raw string with read() and splitting on newline"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Generators produce items on demand using lazy evaluation, consuming O(1) memory regardless of file size."
+      },
+      {
+        "id": "q2",
+        "type": "scenario",
+        "skill": "SQL & Database Design",
+        "points": 20,
+        "question": "Your relational database query: SELECT * FROM orders WHERE customer_id = 4920 AND status = 'COMPLETED' is experiencing slow sequential scans as the table reached 5 million rows. What is the optimal index strategy?",
+        "options": [
+          "Create a composite B-tree index on (customer_id, status)",
+          "Create two separate single-column hash indexes on customer_id and status",
+          "Run a FULL OUTER JOIN with the customers table",
+          "Drop existing foreign keys to speed up write locks"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "A composite index on (customer_id, status) allows the query planner to quickly locate exact matching rows in logarithmic time without merging separate index bitmaps."
+      },
+      {
+        "id": "q3",
+        "type": "mcq",
+        "skill": "API Security",
+        "points": 20,
+        "question": "When implementing JSON Web Token (JWT) based authentication in a REST API, where should sensitive authorization roles and expiration timestamps be encoded?",
+        "options": [
+          "Inside the cryptographically signed JWT Payload (claims)",
+          "Inside the cleartext HTTP User-Agent header",
+          "Appended directly in the URL query string parameters",
+          "Stored exclusively in browser LocalStorage without signature"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "The payload contains standard claims (sub, role, exp) verified by the secret key signature in the token header/signature segment."
+      },
+      {
+        "id": "q4",
+        "type": "scenario",
+        "skill": "Cloud & Scalability",
+        "points": 20,
+        "question": "A high-traffic web application receives burst uploads of 20 MB PDF and image project submissions. Which architecture prevents backend API server threads from locking during file transfers?",
+        "options": [
+          "Generate pre-signed S3 upload URLs on the server and have the client upload directly to Amazon S3",
+          "Buffer the full file stream in Node.js server RAM before writing to local disk",
+          "Store the file binary directly as a base64 string in a DynamoDB text attribute",
+          "Spawn 100 parallel child processes on the web server to handle raw sockets"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Pre-signed URLs offload network I/O and large payload bandwidth directly to AWS S3, preserving backend web server concurrency."
+      },
+      {
+        "id": "q5",
+        "type": "practical",
+        "skill": "Machine Learning & AI",
+        "points": 20,
+        "question": "In a Retrieval-Augmented Generation (RAG) pipeline, why is chunk overlap (e.g., 200 token overlap on 1000 token chunks) crucial during document ingestion?",
+        "options": [
+          "It prevents semantic context from being severed across arbitrary chunk boundaries",
+          "It doubles the vector dimension of the embedding model",
+          "It converts dense vectors into sparse TF-IDF vectors automatically",
+          "It guarantees that LLM temperature is clamped to 0"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Chunk overlap ensures that sentences or definitions spanning the boundary between two chunks retain complete contextual continuity."
+      }
+    ],
+    "score": null,
+    "submittedAt": null,
+    "generatedAt": "2026-09-28T12:15:44.708Z"
   }
 ]

@@ -60,7 +60,18 @@ app.use((err, req, res, next) => {
   });
 });
 
+if (process.env.VERCEL) {
+  seedDatabase().catch((error) => {
+    console.error('Vercel startup seed failed:', error);
+  });
+}
+
 async function startServer() {
+  if (process.env.VERCEL) {
+    console.log('Vercel runtime detected; skipping direct port bind for serverless deployment.');
+    return;
+  }
+
   try {
     await seedDatabase();
     const listenOn = (port) => {
