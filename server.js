@@ -12,6 +12,8 @@ dotenv.config();
 const app = express();
 const DEFAULT_PORT = Number(process.env.PORT) || 5000;
 
+app.set('trust proxy', 1);
+
 app.use(helmet({
   contentSecurityPolicy: false
 }));
@@ -29,6 +31,7 @@ const limiter = rateLimit({
   max: 300,
   standardHeaders: true,
   legacyHeaders: false,
+  trustProxy: true,
   message: { success: false, message: 'Too many requests, please slow down.' }
 });
 app.use(limiter);
@@ -81,6 +84,8 @@ async function startServer() {
   }
 }
 
-startServer();
+if (require.main === module) {
+  startServer();
+}
 
 module.exports = app;

@@ -54,6 +54,123 @@
         "completed": false
       }
     ],
-    "createdAt": "2026-09-26T09:04:28.421Z"
+    "createdAt": "2026-09-28T11:16:05.454Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "pathId": "133b6c10-0c7b-47e8-915c-93751a497397",
+    "title": "Frontend developer Learning Path",
+    "targetRole": "Frontend developer",
+    "phases": [
+      {
+        "phaseNumber": 1,
+        "title": "Phase 1: Core Fundamentals & Foundations",
+        "targetSkill": "Foundational Architecture",
+        "durationDays": 7,
+        "objective": "Solidify syntax, design patterns, and idiomatic conventions.",
+        "tasks": [
+          {
+            "taskId": "task-1-1",
+            "title": "Master Modern Conventions & Paradigms",
+            "description": "Review core syntax, async patterns, and functional utilities.",
+            "completed": true
+          },
+          {
+            "taskId": "task-1-2",
+            "title": "Data Structures & Complex Queries",
+            "description": "Implement data structures, indexing, and pipeline filtering.",
+            "completed": true
+          },
+          {
+            "taskId": "task-1-3",
+            "title": "Mini Benchmark Project",
+            "description": "Build and benchmark a small standalone module.",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "phaseNumber": 2,
+        "title": "Phase 2: Framework Mastery & Applied APIs",
+        "targetSkill": "Framework Deep Dive",
+        "durationDays": 10,
+        "objective": "Build modular, well-tested services using standard industry frameworks.",
+        "tasks": [
+          {
+            "taskId": "task-2-1",
+            "title": "Service Architecture & Middleware",
+            "description": "Setup modular controllers, routing, and error boundaries.",
+            "completed": false
+          },
+          {
+            "taskId": "task-2-2",
+            "title": "Authentication & Role-Based Access",
+            "description": "Implement JWT, bcrypt hashing, and token authorization.",
+            "completed": false
+          },
+          {
+            "taskId": "task-2-3",
+            "title": "Integration Testing Suite",
+            "description": "Write automated API integration tests covering edge cases.",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "phaseNumber": 3,
+        "title": "Phase 3: Production System Design & Advanced Techniques",
+        "targetSkill": "Advanced Systems & ML/Pipelines",
+        "durationDays": 10,
+        "objective": "Implement scalable workflows, caching, and specialized integrations.",
+        "tasks": [
+          {
+            "taskId": "task-3-1",
+            "title": "Vector Storage & Retrieval / Indexing",
+            "description": "Configure embeddings, vector indexing, or database caching.",
+            "completed": false
+          },
+          {
+            "taskId": "task-3-2",
+            "title": "End-to-End Pipeline Optimization",
+            "description": "Measure latency, optimize queries, and stream responses.",
+            "completed": false
+          },
+          {
+            "taskId": "task-3-3",
+            "title": "System Documentation & Architecture Spec",
+            "description": "Create comprehensive architecture and sequence diagrams.",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "phaseNumber": 4,
+        "title": "Phase 4: Cloud Infrastructure, Docker & Deployment",
+        "targetSkill": "Cloud & DevOps (Docker, AWS)",
+        "durationDays": 7,
+        "objective": "Containerize application, configure cloud resources, and publish production release.",
+        "tasks": [
+          {
+            "taskId": "task-4-1",
+            "title": "Containerize with Multi-Stage Dockerfile",
+            "description": "Create optimized minimal Docker image with security scanning.",
+            "completed": false
+          },
+          {
+            "taskId": "task-4-2",
+            "title": "Deploy to Cloud Infrastructure (S3 / Lambda / EC2)",
+            "description": "Automate build artifact publishing and environment secrets.",
+            "completed": false
+          },
+          {
+            "taskId": "task-4-3",
+            "title": "Peer Code Review & Demonstration",
+            "description": "Present working demonstration to faculty mentors for verification.",
+            "completed": false
+          }
+        ]
+      }
+    ],
+    "createdAt": "2026-09-27T17:09:13.119Z"
   }
 ]

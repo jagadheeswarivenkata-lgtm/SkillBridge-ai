@@ -89,5 +89,271 @@
     "message": "Your weekly AI Engineer assessment is ready.",
     "isRead": false,
     "createdAt": "2026-09-26T09:04:28.417Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "f72d0b13-7677-4afd-8c3c-00264595b075",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-27T16:59:36.514Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "59031c7a-abe8-4c84-b1ff-249d4e1fe317",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-27T16:59:36.514Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "9e09f28d-3ba4-483f-bdb0-624003a15287",
+    "type": "skill-gap",
+    "message": "Target role set to Frontend developer. Skill gap analysis is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-27T17:08:14.225Z",
+    "metadata": {
+      "role": "Frontend developer"
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "732cbbbc-444f-42a5-9164-29a582b0b65d",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:25:03.247Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "ac213f82-caaf-4cc3-9a82-8a1aa19faee4",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:25:03.247Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "58a1844c-fc11-4b08-b1c2-50b0e3595fe5",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:28:30.909Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "46981158-a630-4c40-a421-5dc127601f43",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:28:30.909Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "75ff94cb-0cc0-4bb2-b112-3d6647be33cb",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:29:05.132Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "b2a7fe5d-20f0-4f2e-b435-b42caede27c3",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:30:59.363Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "35725963-3079-4e58-926e-cad587bb0ad4",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:31:16.824Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "8ed833ed-4bfa-43de-862b-5f33654b0d13",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:33:18.671Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "e7b22b07-c3c8-4bbf-9415-893f1a35f530",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:36:17.494Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "fd95a8a8-2405-425b-98f1-53e6422c8a1b",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 100%.",
+    "isRead": false,
+    "createdAt": "2026-09-27T18:37:35.138Z",
+    "metadata": {
+      "score": 100
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "c91b6c12-4be6-4cfa-9b1b-daa82035161d",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-28T09:44:38.143Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "ec434be2-f0d9-45b4-8ea3-3bb5029ecf3a",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-28T09:44:38.143Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "c33661d9-b97c-460b-81cd-5ed445f1ccb4",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T09:51:04.944Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "e7239ea0-84ad-41be-80f8-549373dc8722",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 0%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T09:51:34.944Z",
+    "metadata": {
+      "score": 0
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "60499cc8-eb61-4088-986d-c25ea7a90765",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:02:56.035Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "c1a0b247-ec2b-42cc-b306-d41301be8e7e",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:02:56.035Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "d231174e-b56d-4e32-a7ab-f38bbaa14fc3",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 100%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:04:04.312Z",
+    "metadata": {
+      "score": 100
+    }
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "e29d4246-81d7-4717-8d85-96a020c0abd6",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 100%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:07:23.277Z",
+    "metadata": {
+      "score": 100
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "43f3a32c-1df0-4e0e-8646-4286c91a466c",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:17:00.058Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "34531a3a-69d4-4661-80d5-f955eef126ba",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:17:00.058Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "3694899e-3ef4-45f5-9582-771ccaea290f",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 100%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T10:18:37.802Z",
+    "metadata": {
+      "score": 100
+    }
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "15c9b59e-aa3c-4d6d-8b26-cdb3e19f8872",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 100%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T11:14:31.828Z",
+    "metadata": {
+      "score": 100
+    }
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "782edea9-f112-4ed8-afdf-6597e04e480c",
+    "type": "skill-gap",
+    "message": "New skill gap detected in RAG and Deep Learning.",
+    "isRead": false,
+    "createdAt": "2026-09-28T11:16:05.448Z"
+  },
+  {
+    "studentId": "student-demo",
+    "notificationId": "9eae9efc-f155-44c0-95a2-8371cc46f09b",
+    "type": "assessment",
+    "message": "Your weekly AI Engineer assessment is ready.",
+    "isRead": false,
+    "createdAt": "2026-09-28T11:16:05.448Z"
+  },
+  {
+    "studentId": "bdf9157c-b3c0-4cca-905c-1be1624819b7",
+    "notificationId": "3e663ae0-22bf-45fd-a559-3d7abcdb9ae8",
+    "type": "assessment-result",
+    "message": "Assessment submitted with a score of 100%.",
+    "isRead": false,
+    "createdAt": "2026-09-28T11:16:21.310Z",
+    "metadata": {
+      "score": 100
+    }
   }
 ]

@@ -327,6 +327,7 @@ function renderDashboard() {
 }
 
 async function loadProfile() {
+
   if (!ensureAuthenticated()) return;
   try {
     const response = await apiFetch('/profile');
@@ -595,7 +596,7 @@ async function loadAssessment() {
       <div class="project-card">
         <strong>Q${index + 1}. ${question.question}</strong>
         ${(question.options || []).length ? `
-          <div class="list-inline" style="margin-top:12px;">${question.options.map((option) => `<label class="tag primary" style="cursor:pointer"><input type="radio" name="q${question.id || index}" value="${option}" style="margin-right:6px;">${option}</label>`).join('')}</div>
+          <div class="list-inline" style="margin-top:12px;">${question.options.map((option, optionIndex) => `<label class="tag primary" style="cursor:pointer"><input type="radio" name="q${question.id || index}" value="${optionIndex}" data-label="${option}" style="margin-right:6px;">${option}</label>`).join('')}</div>
         ` : `<textarea id="answer-${question.id || index}" placeholder="Write your answer here..." class="form-control" style="margin-top:12px; width:100%;"></textarea>`}
       </div>
     `).join('');
@@ -607,7 +608,7 @@ async function loadAssessment() {
         const name = `q${question.id || index}`;
         const selected = document.querySelector(`input[name="${name}"]:checked`);
         const text = document.getElementById(`answer-${question.id || index}`)?.value;
-        answers[question.id || `q${index + 1}`] = selected ? selected.value : text || '';
+        answers[question.id || `q${index + 1}`] = selected ? String(selected.value) : text || '';
       });
 
       try {

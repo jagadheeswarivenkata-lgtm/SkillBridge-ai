@@ -527,21 +527,30 @@ router.post('/projects/recommend', authMiddleware, async (req, res) => {
 router.get('/assessment/current', authMiddleware, async (req, res) => {
   const items = await scanTable('Assessments');
   const studentAssessments = items.filter((assessment) => assessment.studentId === req.user.id);
-  const current = studentAssessments.find((a) => !a.score) || {
-    assessmentId: uuidv4(),
-    weekNumber: 1,
-    title: 'Weekly AI Engineer Assessment',
-    skillsTested: ['Python', 'Machine Learning', 'RAG'],
-    questions: [
-      { id: 'q1', type: 'mcq', question: 'Which Python library is widely used for tensor operations in deep learning?', options: ['NumPy', 'PyTorch', 'Pandas', 'Scikit-learn'], answer: 'PyTorch' },
-      { id: 'q2', type: 'short', question: 'Explain the purpose of a retrieval-augmented generation (RAG) pipeline.', answer: '' },
-      { id: 'q3', type: 'scenario', question: 'A model performs poorly in production due to stale data. What should the first step be?', options: ['Ignore it', 'Monitor drift and retrain', 'Change the frontend', 'Remove validation'], answer: 'Monitor drift and retrain' }
-    ],
-    score: null,
-    submittedAt: null,
-    generatedAt: new Date().toISOString(),
-    studentId: req.user.id
-  };
+
+  let current = studentAssessments.find((assessment) => assessment.score === null || assessment.score === undefined || assessment.score === '') || null;
+
+  if (!current) {
+    const generated = await generateAssessment({ phases: ['Python', 'Machine Learning', 'RAG'] }, ['Python', 'Machine Learning', 'RAG'], 1);
+    current = {
+      studentId: req.user.id,
+      assessmentId: uuidv4(),
+      title: 'Weekly AI Engineer Assessment',
+      weekNumber: 1,
+      skillsTested: ['Python', 'Machine Learning', 'RAG'],
+      questions: generated.questions || [
+        { id: 'q1', type: 'mcq', question: 'Which Python library is widely used for tensor operations in deep learning?', options: ['NumPy', 'PyTorch', 'Pandas', 'Scikit-learn'], answer: 'PyTorch' },
+        { id: 'q2', type: 'short', question: 'Explain the purpose of a retrieval-augmented generation (RAG) pipeline.', answer: '' },
+        { id: 'q3', type: 'scenario', question: 'A model performs poorly in production due to stale data. What should the first step be?', options: ['Ignore it', 'Monitor drift and retrain', 'Change the frontend', 'Remove validation'], answer: 'Monitor drift and retrain' }
+      ],
+      score: null,
+      submittedAt: null,
+      generatedAt: new Date().toISOString()
+    };
+
+    await docClient.send(new PutCommand({ TableName: 'Assessments', Item: current }));
+  }
+
   res.json({ success: true, assessment: current });
 });
 
@@ -571,9 +580,10 @@ router.post('/assessment/submit', authMiddleware, async (req, res) => {
     const items = await scanTable('Assessments');
     const assessment = items.find((item) => item.assessmentId === assessmentId && item.studentId === req.user.id);
     if (!assessment) return res.status(404).json({ success: false, message: 'Assessment not found.' });
-
+    console.log('Submitting ', JSON.stringify(assessment.questions));
     const evaluation = await evaluateAssessment(assessment.questions || [], answers || {});
-    const score = Number(evaluation.score || 0);
+    console.log('Evaluation result:', evaluation);
+    const score = Number(evaluation.percentage ?? evaluation.score ?? 0);
     const updated = {
       ...assessment,
       answers: answers || {},

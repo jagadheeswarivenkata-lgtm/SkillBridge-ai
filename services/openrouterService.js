@@ -643,7 +643,23 @@ function fallbackEvaluateAssessment(questions = [], studentAnswers = {}) {
   questions.forEach(q => {
     totalMax += (q.points || 20);
     const studentChoice = studentAnswers[q.id];
-    const isCorrect = Number(studentChoice) === Number(q.correctOptionIndex);
+    const studentValue = typeof studentChoice === 'string' ? studentChoice.trim() : studentChoice;
+    const correctIndex = Number(q.correctOptionIndex ?? -1);
+    const correctOptionText = Array.isArray(q.options) && Number.isInteger(correctIndex) && correctIndex >= 0
+      ? String(q.options[correctIndex] || '').trim()
+      : '';
+    const correctAnswerText = typeof q.answer !== 'undefined' ? String(q.answer).trim() : correctOptionText;
+    const normalizedStudent = String(studentValue ?? '').trim().toLowerCase();
+    const normalizedCorrect = String(correctAnswerText || correctOptionText || '').trim().toLowerCase();
+
+    const isCorrect =
+      studentChoice === q.correctOptionIndex ||
+      Number(studentChoice) === correctIndex ||
+      Number(studentValue) === correctIndex ||
+      normalizedStudent === normalizedCorrect ||
+      normalizedStudent === String(correctIndex).toLowerCase() ||
+      normalizedStudent === String(correctAnswerText || '').toLowerCase() ||
+      normalizedStudent === String(correctOptionText || '').toLowerCase();
 
     if (!skillPointsMap[q.skill]) {
       skillPointsMap[q.skill] = { earned: 0, max: 0 };
@@ -660,7 +676,7 @@ function fallbackEvaluateAssessment(questions = [], studentAnswers = {}) {
       skill: q.skill,
       correct: isCorrect,
       studentAnswer: studentChoice,
-      correctAnswer: q.correctOptionIndex,
+      correctAnswer: q.correctOptionIndex ?? q.answer ?? correctOptionText,
       awardedPoints: isCorrect ? (q.points || 20) : 0,
       maxPoints: q.points || 20,
       explanation: q.explanation || 'Evaluated against industry standards.'
