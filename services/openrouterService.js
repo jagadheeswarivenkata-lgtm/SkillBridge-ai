@@ -8,6 +8,7 @@ require('dotenv').config();
 
 const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '';
 const OPENROUTER_MODEL = process.env.OPENROUTER_MODEL || 'google/gemini-2.5-flash';
+const APP_URL = process.env.APP_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:5000');
 
 /**
  * Loads a prompt template from the /prompts directory
@@ -30,23 +31,28 @@ async function generateAIResponse(prompt, systemInstruction = 'You are an advanc
     throw new Error('OPENROUTER_API_KEY is not configured.');
   }
 
+  const requestBody = {
+    model: OPENROUTER_MODEL,
+    messages: [
+      { role: 'system', content: systemInstruction },
+      { role: 'user', content: prompt }
+    ],
+    temperature: 0.2
+  };
+
+  if (OPENROUTER_MODEL.includes('gpt') || OPENROUTER_MODEL.includes('claude') || OPENROUTER_MODEL.includes('gemini')) {
+    requestBody.response_format = { type: 'json_object' };
+  }
+
   const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
       'Content-Type': 'application/json',
-      'HTTP-Referer': 'http://localhost:5000',
+      'HTTP-Referer': APP_URL,
       'X-Title': 'SkillBridge AI'
     },
-    body: JSON.stringify({
-      model: OPENROUTER_MODEL,
-      messages: [
-        { role: 'system', content: systemInstruction },
-        { role: 'user', content: prompt }
-      ],
-      temperature: 0.2,
-      response_format: { type: 'json_object' }
-    })
+    body: JSON.stringify(requestBody)
   });
 
   if (!response.ok) {
